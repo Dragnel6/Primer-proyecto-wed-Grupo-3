@@ -19,7 +19,7 @@
 <body>
 	<!-- main -->
 	<div class="main-agileits">
-		<h1>Restaurante el buen sabor</h1>
+		<h1>La pampeña</h1>
 		<div class="mainw3-agileinfo">
 			<!-- login form -->
 			<div class="login-form">  

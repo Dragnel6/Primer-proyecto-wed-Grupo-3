@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu principal.master.cs" Inherits="Primer_proyecto_wed_Grupo_3.Menu_principal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Menu principal</title>
+    <link href="Content/Estilo-de-menu-principal.css" rel="stylesheet" />
+   <style>
+       body{
+           background-image:url(images/12345.jpg);
+           background-size:cover;
+           background-attachment:fixed;
+       }
+   </style>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav>
+                <div id="logo">
+                    <img src="images/pampena.jpg" width="200px" />
+                    <label class="toggle" for="drop">Menu</label>
+                    <input type="checkbox" id="drop" />
+                </div>
+                <ul class="Menu">
+                    <li><a href="Menu principal.aspx">Menu</a></li>
+                     <li><a href="Contact.aspx">Contacto</a></li>
+                    <li><a href="#">Agregar</a>
+                        <ul>
+                              <li><a href="#">Agregar usuarios</a></li>
+                              <li><a href="#">Agregar empleados</a></li>
+                             <li><a href="#">Ejemplo</a>
+                                 <ul>
+                                     <li><a href="#">Agregar usuarios</a></li>
+                                     <li><a href="#">Agregar empleados</a></li>
+                                 </ul>
+                             </li>
+                        </ul>
+                    </li>                                 
+                    <li><a href="#">Usuarios</a></li>
+                    <li><a href="#">Empleados</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                </ul>
+            </nav>                                 
+        </div>
+    </form> 
+</body>
+</html>
