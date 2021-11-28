@@ -38,9 +38,9 @@
 			<div class="login-form">  
 				<div class="login-agileits-top"> 	
 						<p>Nombre de usuario </p>
-						<input id="txtUsuario" Runat="server" type="text" class="name" name="username" placeholder="Ingresar usuario" required=""/>
+						<input id="input1" Runat="server" type="text" class="name" name="username" placeholder="Ingresar usuario" required=""/>
 						<p>Contraseña</p>
-						<input id="txtContra" runat="server" type="text" name="Contraseña" placeholder=".........." required=""/>  
+						<input id="input2" runat="server" type="text" name="Contraseña" placeholder=".........." required=""/>  
 						<label class="anim">
 							<input type="checkbox" class="checkbox"> Recordar contraseña<span> ?</span> 
 						</label>   

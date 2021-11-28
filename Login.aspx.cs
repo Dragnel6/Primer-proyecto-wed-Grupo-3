@@ -15,13 +15,7 @@ namespace Primer_proyecto_wed_Grupo_3
         }
         protected void btIngresar(object sender, EventArgs e)
         {
-            string usuario;
-            string clave;
-
-            if (txtUsuario.text !=" " & txtContra.text !=" "){
-
-
-            }
+           
         }
     }
 }
