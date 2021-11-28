@@ -38,13 +38,13 @@
 			<div class="login-form">  
 				<div class="login-agileits-top"> 	
 						<p>Nombre de usuario </p>
-						<input id="input1" type="text" class="name" name="username" placeholder="Ingresar usuario" required=""/>
+						<input id="txtUsuario" Runat="server" type="text" class="name" name="username" placeholder="Ingresar usuario" required=""/>
 						<p>Contraseña</p>
-						<input id="input2" type="password" class="password" name="Contraseña" placeholder=".........." required=""/>  
+						<input id="txtContra" runat="server" type="text" name="Contraseña" placeholder=".........." required=""/>  
 						<label class="anim">
 							<input type="checkbox" class="checkbox"> Recordar contraseña<span> ?</span> 
 						</label>   
-						<input type="submit" value="Ingresar"> 
+						<input type="submit" runat="server" value="Ingresar" id="btIngresar" onclick="btIngresar"> 
 					 
 					</div> 
 				<div class="login-agileits-bottom"> 
@@ -64,7 +64,7 @@
 	</div>	
 	<!-- //main -->
 	<!-- copyright -->
-	<div class="w3copyright-agile">
+	<div class="-agile">
 		<p>© Grupo 3 primer proyecto web </p>
         <table class="auto-style1">
             <tr>
