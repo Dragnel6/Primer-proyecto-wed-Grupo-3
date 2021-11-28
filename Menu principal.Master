@@ -36,20 +36,19 @@
                 </div>
                 <ul class="Menu">
                     <li><a href="Menu principal.aspx">Menu</a></li>
+                     <li><a href="#">Consultas</a>
+                                 <ul>
+                                     <li><a href="#">Usuarios</a></li>
+                                     <li><a href="Tabla_empleado.aspx">Empleados</a></li>
+                                 </ul>
+                             </li>
                      <li><a href="#">Agregar</a>
                         <ul>
                               <li><a href="#">Agregar usuarios</a></li>
-                              <li><a href="#">Agregar empleados</a></li>
-                             <li><a href="#">Ejemplo</a>
-                                 <ul>
-                                     <li><a href="#">Agregar usuarios</a></li>
-                                     <li><a href="#">Agregar empleados</a></li>
-                                 </ul>
-                             </li>
+                              <li><a href="#">Agregar empleados</a></li>                          
                         </ul>
                     </li>                                 
-                    <li><a href="#">Usuarios</a></li>
-                    <li><a href="Tabla_empleado.aspx">Empleados</a></li>
+                    
                     <li><a href="#">Ayuda</a></li>
                     <li><a href="#">Acerca de</a></li>
                 </ul>
