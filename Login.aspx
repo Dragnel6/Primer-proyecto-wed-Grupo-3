@@ -8,7 +8,7 @@
 
 <html>
 <head>
-<title>Tiny Ui Login Form Flat Responsive Widget Template :: w3layouts</title>
+<title>Ingresar</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Tiny Ui Login Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
@@ -38,13 +38,13 @@
 			<div class="login-form">  
 				<div class="login-agileits-top"> 	
 						<p>Nombre de usuario </p>
-						<input id="input1" type="text" class="name" name="username" placeholder="Username" required=""/>
+						<input id="input1" type="text" class="name" name="username" placeholder="Ingresar usuario" required=""/>
 						<p>Contraseña</p>
-						<input id="input2" type="password" class="password" name="Password" placeholder=".........." required=""/>  
+						<input id="input2" type="password" class="password" name="Contraseña" placeholder=".........." required=""/>  
 						<label class="anim">
 							<input type="checkbox" class="checkbox"> Recordar contraseña<span> ?</span> 
 						</label>   
-						<input type="submit" value="Login"> 
+						<input type="submit" value="Ingresar"> 
 					 
 					</div> 
 				<div class="login-agileits-bottom"> 

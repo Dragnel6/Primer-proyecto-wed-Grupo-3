@@ -36,8 +36,7 @@
                 </div>
                 <ul class="Menu">
                     <li><a href="Menu principal.aspx">Menu</a></li>
-                     <li><a href="Contact.aspx">Contacto</a></li>
-                    <li><a href="#">Agregar</a>
+                     <li><a href="#">Agregar</a>
                         <ul>
                               <li><a href="#">Agregar usuarios</a></li>
                               <li><a href="#">Agregar empleados</a></li>
