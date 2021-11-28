@@ -11,7 +11,7 @@ namespace Primer_proyecto_wed_Grupo_3
 {
 
 
-    public partial class Tabla_empleado
+    public partial class Tabla_menu
     {
 
         /// <summary>

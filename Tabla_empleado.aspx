@@ -17,7 +17,9 @@
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <td class="auto-style3">Tabla de empleados</td>
+        <td class="auto-style3">
+            <asp:Label ID="Label1" runat="server" BackColor="Black" Font-Size="XX-Large" Text="Tabla empleados"></asp:Label>
+        </td>
         <td>
             <asp:DropDownList ID="DdlLista" runat="server" AutoPostBack="True" DataSourceID="Sql_lista" DataTextField="nombre_area" DataValueField="nombre_area">
             </asp:DropDownList>

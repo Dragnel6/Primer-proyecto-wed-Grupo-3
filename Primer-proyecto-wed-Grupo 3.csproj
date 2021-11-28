@@ -172,6 +172,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="Tabla_empleado.aspx" />
+    <Content Include="Tabla_menu.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -267,6 +268,13 @@
     </Compile>
     <Compile Include="Tabla_empleado.aspx.designer.cs">
       <DependentUpon>Tabla_empleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tabla_menu.aspx.cs">
+      <DependentUpon>Tabla_menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tabla_menu.aspx.designer.cs">
+      <DependentUpon>Tabla_menu.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

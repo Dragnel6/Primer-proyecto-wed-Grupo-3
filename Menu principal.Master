@@ -7,7 +7,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Menu principal</title>
     <link href="Content/Estilo-de-menu-principal.css" rel="stylesheet" />
-
+       
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
    <style>
        body{
            background-image:url(images/12345.jpg);
@@ -22,8 +24,6 @@
        }
    </style>
     
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">

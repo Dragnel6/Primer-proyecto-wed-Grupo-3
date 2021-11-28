@@ -14,7 +14,10 @@
             color: #FFFFFF;
         }
         .auto-style22 {
-            color: #FFFFFF;
+            color: #FF0000;
+        }
+        .auto-style23 {
+            color: #66FF66;
         }
     </style>
 </asp:Content>
@@ -27,13 +30,17 @@
             <td class="auto-style2">
                 <table class="auto-style1">
                     <tr>
-                        <td class="auto-style21">Registro de usuarios</td>
+                        <td class="auto-style21">
+                            <asp:Label ID="Label8" runat="server" BackColor="Black" CssClass="auto-style23" Font-Size="XX-Large" Text="Registro de usuarios"></asp:Label>
+                        </td>
                     </tr>
                     <tr>
                         <td class="auto-style7">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style21">Escriba un nombre de usuario</td>
+                        <td class="auto-style21">
+                            <asp:Label ID="Label4" runat="server" BackColor="Black" Font-Size="Large" Text="Escriba un nombre de usuario"></asp:Label>
+                        </td>
                     </tr>
                     <tr>
                         <td class="auto-style7">
@@ -44,7 +51,9 @@
                         <td class="auto-style7">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style21">Selecciona el tipo de usuario</td>
+                        <td class="auto-style21">
+                            <asp:Label ID="Label5" runat="server" BackColor="Black" Font-Size="Large" Text="Seleccione el tipo de usuario"></asp:Label>
+                        </td>
                     </tr>
                     <tr>
                         <td class="auto-style7">
@@ -61,7 +70,9 @@
                         <td class="auto-style7">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style21">Escriba una clave</td>
+                        <td class="auto-style21">
+                            <asp:Label ID="Label6" runat="server" BackColor="Black" Font-Size="Large" Text="Escribe una clave"></asp:Label>
+                        </td>
                     </tr>
                     <tr>
                         <td class="auto-style7">
@@ -72,7 +83,9 @@
                         <td class="auto-style7">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style21">Confirme su clave</td>
+                        <td class="auto-style21">
+                            <asp:Label ID="Label7" runat="server" BackColor="Black" Font-Size="Large" Text="Confirma tu clave"></asp:Label>
+                        </td>
                     </tr>
                     <tr>
                         <td class="auto-style7">
@@ -84,12 +97,12 @@
                     </tr>
                     <tr>
                         <td class="auto-style7">
-                            <asp:Button ID="btRegistrar" runat="server" Height="49px" OnClick="btRegistrar_Click" Text="Registrar usuario" Width="169px" />
+                            <asp:Button ID="btRegistrar" runat="server" Height="50px" OnClick="btRegistrar_Click" Text="Registrar usuario" Width="159px" />
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style20">
-                            <asp:Label ID="lblUsuarios" runat="server" CssClass="auto-style22" Text="Label"></asp:Label>
+                            <asp:Label ID="lblUsuarios" runat="server" CssClass="auto-style22" Text="Label" BackColor="Black" Font-Size="XX-Large"></asp:Label>
                         </td>
                     </tr>
                 </table>

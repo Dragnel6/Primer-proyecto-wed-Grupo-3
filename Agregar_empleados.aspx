@@ -5,11 +5,19 @@
             text-align: center;
         }
         .auto-style4 {
-            color: #FFFFFF;
+            color: #FF0000;
         }
         .auto-style5 {
             text-align: center;
             color: #FFFFFF;
+        }
+    .auto-style6 {
+        text-align: center;
+        color: #FFFFFF;
+        height: 26px;
+    }
+        .auto-style7 {
+            color: #66FF66;
         }
     </style>
 </asp:Content>
@@ -20,20 +28,24 @@
     <table class="auto-style1">
         <tr>
             <td class="auto-style3" colspan="2">
-                <asp:Label ID="lblEmpl" runat="server" CssClass="auto-style4" Text="Label"></asp:Label>
+                <asp:Label ID="lblEmpl" runat="server" CssClass="auto-style4" Text="Label" BackColor="Black" Font-Size="XX-Large"></asp:Label>
             </td>
         </tr>
         <tr>
             <td colspan="2">&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style5" colspan="2">Registro de empleados</td>
+            <td class="auto-style5" colspan="2">
+                <asp:Label ID="Label1" runat="server" BackColor="Black" CssClass="auto-style7" Font-Size="X-Large" Text="Registro de empleados"></asp:Label>
+            </td>
         </tr>
         <tr>
             <td colspan="2">&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style5" colspan="2">Codigo</td>
+            <td class="auto-style5" colspan="2">
+                <asp:Label ID="Label2" runat="server" BackColor="Black" Font-Size="Large" Text="Codigo"></asp:Label>
+            </td>
         </tr>
         <tr>
             <td class="auto-style3" colspan="2">
@@ -44,7 +56,9 @@
             <td colspan="2">&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style5" colspan="2">Nombres</td>
+            <td class="auto-style5" colspan="2">
+                <asp:Label ID="Label3" runat="server" BackColor="Black" Font-Size="Large" Text="Nombre"></asp:Label>
+            </td>
         </tr>
         <tr>
             <td class="auto-style3" colspan="2">
@@ -55,7 +69,9 @@
             <td colspan="2">&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style5" colspan="2">Apellidos</td>
+            <td class="auto-style5" colspan="2">
+                <asp:Label ID="Label4" runat="server" BackColor="Black" Font-Size="Large" Text="Apellidos"></asp:Label>
+            </td>
         </tr>
         <tr>
             <td class="auto-style3" colspan="2">
@@ -66,18 +82,22 @@
             <td class="auto-style2" colspan="2"></td>
         </tr>
         <tr>
-            <td class="auto-style5" colspan="2">N° de DUI</td>
+            <td class="auto-style6" colspan="2">
+                <asp:Label ID="Label5" runat="server" BackColor="Black" Font-Size="Large" Text="N° de DUI"></asp:Label>
+            </td>
         </tr>
         <tr>
             <td class="auto-style3" colspan="2">
-                <asp:TextBox ID="txtDui" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtDui" runat="server" OnTextChanged="txtDui_TextChanged"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td colspan="2">&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style5" colspan="2">Telefono</td>
+            <td class="auto-style5" colspan="2">
+                <asp:Label ID="Label6" runat="server" BackColor="Black" Font-Size="Large" Text="Telefono"></asp:Label>
+            </td>
         </tr>
         <tr>
             <td class="auto-style3" colspan="2">
@@ -88,7 +108,9 @@
             <td colspan="2">&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style5" colspan="2">Correo electronico</td>
+            <td class="auto-style5" colspan="2">
+                <asp:Label ID="Label7" runat="server" BackColor="Black" Font-Size="Large" Text="Apellidos"></asp:Label>
+            </td>
         </tr>
         <tr>
             <td class="auto-style3" colspan="2">
@@ -100,7 +122,7 @@
         </tr>
         <tr>
             <td class="auto-style3" colspan="2">
-                <asp:Button ID="btAgregar" runat="server" Height="39px" OnClick="btAgregar_Click" Text="Agregar empleado" Width="155px" />
+                <asp:Button ID="btAgregar" runat="server" Height="50px" OnClick="btAgregar_Click" Text="Agregar empleado" Width="159px" />
             </td>
         </tr>
         <tr>
@@ -134,10 +156,10 @@
         </tr>
         <tr>
             <td class="auto-style3">
-                <asp:Button ID="btGuardarEdit" runat="server" Height="41px" OnClick="btGuardar_Click" Text="Confirmar Edicion" Width="152px" />
+                <asp:Button ID="btGuardarEdit" runat="server" Height="50px" OnClick="btGuardar_Click" Text="Confirmar Edicion" Width="159px" />
             </td>
             <td>
-                <asp:Button ID="btEliminar" runat="server" Height="41px" OnClick="btEliminar_Click" Text="Eliminar empleado" Width="152px" />
+                <asp:Button ID="btEliminar" runat="server" Height="50px" OnClick="btEliminar_Click" Text="Eliminar empleado" Width="159px" />
             </td>
         </tr>
         <tr>
