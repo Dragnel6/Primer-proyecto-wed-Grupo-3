@@ -35,7 +35,7 @@
                     <input type="checkbox" id="drop" />
                 </div>
                 <ul class="Menu">
-                    <li><a href="Menu principal.aspx">Menu</a></li>
+                    <li><a href="Tabla_menu.aspx">Menu</a></li>
                      <li><a href="#">Consultas</a>
                                  <ul>
                                      <li><a href="#">Usuarios</a></li>
@@ -44,8 +44,8 @@
                              </li>
                      <li><a href="#">Agregar</a>
                         <ul>
-                              <li><a href="#">Agregar usuarios</a></li>
-                              <li><a href="#">Agregar empleados</a></li>                          
+                              <li><a href="Agregar_usuarios.aspx">Agregar usuarios</a></li>
+                              <li><a href="Agregar_empleados.aspx">Agregar empleados</a></li>                          
                         </ul>
                     </li>                                 
                     
