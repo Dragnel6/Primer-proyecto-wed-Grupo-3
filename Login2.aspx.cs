@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Primer_proyecto_wed_Grupo_3
 {
-    public partial class Tabla_empleado : System.Web.UI.Page
+    public partial class Login2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

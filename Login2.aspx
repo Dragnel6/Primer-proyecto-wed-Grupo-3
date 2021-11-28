@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login2.aspx.cs" Inherits="Primer_proyecto_wed_Grupo_3.Login2" %>
+<!DOCTYPE html>
 <script runat="server">
 
 </script>
@@ -87,22 +88,22 @@
 	<!-- js -->  
 	<script src="js/superplaceholder.js"></script>
 	<script>
-	superplaceholder({
-			el: input1,
-			sentences: [ 'john.smith11', 'lorem.ipsum55', 'example@name2' ],
-			options: {
-				loop: true,
-				startOnFocus: false
-			}
-		})
-		superplaceholder({
-			el: input2,
-			sentences: [ '.........', '.....', '.....' ],
-			options: {
-				loop: true,
-				startOnFocus: false 
-			}
-		})
+        superplaceholder({
+            el: input1,
+            sentences: ['john.smith11', 'lorem.ipsum55', 'example@name2'],
+            options: {
+                loop: true,
+                startOnFocus: false
+            }
+        })
+        superplaceholder({
+            el: input2,
+            sentences: ['.........', '.....', '.....'],
+            options: {
+                loop: true,
+                startOnFocus: false
+            }
+        })
     </script>
 	<!-- //js --> 
     </form>

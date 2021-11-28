@@ -134,6 +134,7 @@
     <Content Include="images\Garvi.jpg" />
     <Content Include="images\imagen4.jpg" />
     <Content Include="images\pampena.jpg" />
+    <Content Include="Login2.aspx" />
     <Content Include="Menu principal.aspx" />
     <Content Include="Menu principal.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -224,6 +225,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login2.aspx.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login2.aspx.designer.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Menu principal.aspx.cs">
       <DependentUpon>Menu principal.aspx</DependentUpon>
