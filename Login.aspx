@@ -1,4 +1,11 @@
 ﻿<!DOCTYPE html>
+<script runat="server">
+
+    Protected Sub Page_Load(sender As Object, e As EventArgs)
+
+    End Sub
+</script>
+
 <html>
 <head>
 <title>Tiny Ui Login Form Flat Responsive Widget Template :: w3layouts</title>
@@ -15,8 +22,14 @@
     <link href="Content/font-awesome.css" rel="stylesheet" />
     <link href="Content/style.css" rel="stylesheet" />
 <!-- //web font -->
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+	<form id="form1" runat="server">
 	<!-- main -->
 	<div class="main-agileits">
 		<h1>La pampeña</h1>
@@ -24,7 +37,6 @@
 			<!-- login form -->
 			<div class="login-form">  
 				<div class="login-agileits-top"> 	
-					<form action="#" method="post"> 
 						<p>Nombre de usuario </p>
 						<input id="input1" type="text" class="name" name="username" placeholder="Username" required=""/>
 						<p>Contraseña</p>
@@ -34,8 +46,7 @@
 						</label>   
 						<input type="submit" value="Login"> 
 					 
-					</form> 	
-				</div> 
+					</div> 
 				<div class="login-agileits-bottom"> 
 					<h6><a href="#">As olvidado tu contraseña?</a></h6>
 				</div>  
@@ -55,6 +66,13 @@
 	<!-- copyright -->
 	<div class="w3copyright-agile">
 		<p>© Grupo 3 primer proyecto web </p>
+        <table class="auto-style1">
+            <tr>
+                <td>
+                    <asp:SqlDataSource ID="SqlLogin" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT [Usuario], [Contrasena] FROM [ingreso]"></asp:SqlDataSource>
+                </td>
+            </tr>
+        </table>
 	</div>
 	<!-- //copyright -->
 	<!-- js -->  
@@ -78,5 +96,6 @@
 		})
     </script>
 	<!-- //js --> 
+    </form>
 </body>
 </html>
