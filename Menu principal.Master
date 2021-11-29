@@ -49,8 +49,8 @@
                         </ul>
                     </li>                                 
                     
-                    <li><a href="About.aspx">Ayuda</a></li>
-                    <li><a href="Contact.aspx">Acerca de</a></li>
+                    <li><a href="Ayuda.aspx">Ayuda</a></li>
+                    <li><a href="Acerca-de.aspx">Acerca de</a></li>
                 </ul>
             </nav>                                 
         </div>
