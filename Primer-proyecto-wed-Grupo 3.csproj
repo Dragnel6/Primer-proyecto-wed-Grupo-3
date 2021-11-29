@@ -173,6 +173,7 @@
     <Content Include="Site.Master" />
     <Content Include="Tabla_empleado.aspx" />
     <Content Include="Tabla_menu.aspx" />
+    <Content Include="Tabla_usuario.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -275,6 +276,13 @@
     </Compile>
     <Compile Include="Tabla_menu.aspx.designer.cs">
       <DependentUpon>Tabla_menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tabla_usuario.aspx.cs">
+      <DependentUpon>Tabla_usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tabla_usuario.aspx.designer.cs">
+      <DependentUpon>Tabla_usuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

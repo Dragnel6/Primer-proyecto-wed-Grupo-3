@@ -38,6 +38,7 @@
                     <li><a href="Tabla_menu.aspx">Menu</a></li>
                      <li><a href="#">Consultas</a>
                                  <ul>
+                                     <li><a href="Tabla_usuario.aspx">Usuarios</a></li>
                                      <li><a href="Tabla_empleado.aspx">Empleados</a></li>
                                  </ul>
                              </li>
