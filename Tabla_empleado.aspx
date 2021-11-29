@@ -5,6 +5,9 @@
             color: #FFFFFF;
             text-align: center;
         }
+        .auto-style4 {
+            color: #FFFF00;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -18,7 +21,7 @@
     </tr>
     <tr>
         <td class="auto-style3">
-            <asp:Label ID="Label1" runat="server" BackColor="Black" Font-Size="XX-Large" Text="Tabla empleados"></asp:Label>
+            <asp:Label ID="Label1" runat="server" BackColor="Black" Font-Size="XX-Large" Text="Tabla empleados" CssClass="auto-style4"></asp:Label>
         </td>
         <td>
             <asp:DropDownList ID="DdlLista" runat="server" AutoPostBack="True" DataSourceID="Sql_lista" DataTextField="nombre_area" DataValueField="nombre_area">
@@ -28,7 +31,7 @@
     <tr>
         <td>&nbsp;</td>
         <td>
-            <asp:SqlDataSource ID="Sql_lista" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT * FROM [areas]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="Sql_lista" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT * FROM [areas_empleado]"></asp:SqlDataSource>
         </td>
     </tr>
     <tr>

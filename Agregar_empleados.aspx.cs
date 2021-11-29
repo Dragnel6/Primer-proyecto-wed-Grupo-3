@@ -15,24 +15,6 @@ namespace Primer_proyecto_wed_Grupo_3
 
          }
 
-        protected void GbEmpleados_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SqlDataSource_emple.DataSourceMode = SqlDataSourceMode.DataReader;
-            SqlDataReader datos;
-            datos = (SqlDataReader)SqlDataSource_emple.Select(DataSourceSelectArguments.Empty);
-
-            if (datos.Read())
-            {
-                txtCodigo.Text = datos["IDempleado"].ToString();
-                txtNombre.Text = datos["nombre"].ToString();
-                txtApell.Text = datos["apellidos"].ToString();
-                txtDui.Text = datos["dui"].ToString();
-                txtTelef.Text = datos["telefono"].ToString();
-                txtCorreo.Text = datos["correo"].ToString();
-            }
-        }
-
-
         protected void btAgregar_Click(object sender, EventArgs e)
         {
             // Incorporamos la cadena de conexion usando el origen de la tabla empleado
@@ -115,6 +97,23 @@ namespace Primer_proyecto_wed_Grupo_3
                 }
             }
         }
+        protected void GbEmpleados_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlDataSource_emple.DataSourceMode = SqlDataSourceMode.DataReader;
+            SqlDataReader datos;
+            datos = (SqlDataReader)SqlDataSource_emple.Select(DataSourceSelectArguments.Empty);
+
+            if (datos.Read())
+            {
+                txtCodigo.Text = datos["IDempleado"].ToString();
+                txtNombre.Text = datos["nombre"].ToString();
+                txtApell.Text = datos["apellidos"].ToString();
+                txtDui.Text = datos["dui"].ToString();
+                txtTelef.Text = datos["telefono"].ToString();
+                txtCorreo.Text = datos["correo"].ToString();
+            }
+        }
+
         protected void btGuardar_Click(object sender, EventArgs e)
         {
             // Incorporamos la cadena de conexion usando el origen de la tabla empleado 

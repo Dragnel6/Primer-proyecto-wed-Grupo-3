@@ -4,9 +4,6 @@
         .auto-style3 {
             text-align: center;
         }
-        .auto-style4 {
-            color: #FF0000;
-        }
         .auto-style5 {
             text-align: center;
             color: #FFFFFF;
@@ -17,7 +14,7 @@
         height: 26px;
     }
         .auto-style7 {
-            color: #66FF66;
+            color: #FFFF00;
         }
     </style>
 </asp:Content>
@@ -28,8 +25,7 @@
     <table class="auto-style1">
         <tr>
             <td class="auto-style3" colspan="2">
-                <asp:Label ID="lblEmpl" runat="server" CssClass="auto-style4" Text="Label" BackColor="Black" Font-Size="XX-Large"></asp:Label>
-            </td>
+                &nbsp;</td>
         </tr>
         <tr>
             <td colspan="2">&nbsp;</td>
@@ -88,7 +84,7 @@
         </tr>
         <tr>
             <td class="auto-style3" colspan="2">
-                <asp:TextBox ID="txtDui" runat="server" OnTextChanged="txtDui_TextChanged"></asp:TextBox>
+                <asp:TextBox ID="txtDui" runat="server" ></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -109,7 +105,7 @@
         </tr>
         <tr>
             <td class="auto-style5" colspan="2">
-                <asp:Label ID="Label7" runat="server" BackColor="Black" Font-Size="Large" Text="Apellidos"></asp:Label>
+                <asp:Label ID="Label7" runat="server" BackColor="Black" Font-Size="Large" Text="Correo Electronico"></asp:Label>
             </td>
         </tr>
         <tr>
@@ -128,6 +124,11 @@
         <tr>
             <td colspan="2">
                 <asp:SqlDataSource ID="SqlDataSource_emple" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT [IDempleado], [nombre], [apellidos], [telefono], [dui], [correo] FROM [empleados]"></asp:SqlDataSource>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <asp:Label ID="lblEmpl" runat="server" CssClass="auto-style7" Text="Label" BackColor="Black" Font-Size="X-Large"></asp:Label>
             </td>
         </tr>
         <tr>

@@ -16,10 +16,11 @@ namespace Primer_proyecto_wed_Grupo_3
 
         }
 
-        protected void btIngresar(object sender, EventArgs e)
+        protected void btIngresar_Click(object sender, EventArgs e)
         {
             string usuario;
             string clave;
+            //<input type="submit" runat="server" value="Ingresar" id="btIngresar" onclick="btIngresar_Click"> 
 
 
             if (txtUsuario.Text != "" & txtContra.Text != "")

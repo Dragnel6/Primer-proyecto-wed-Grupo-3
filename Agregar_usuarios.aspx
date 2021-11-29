@@ -13,11 +13,8 @@
             text-align: center;
             color: #FFFFFF;
         }
-        .auto-style22 {
-            color: #FF0000;
-        }
         .auto-style23 {
-            color: #66FF66;
+            color: #FFFF00;
         }
     </style>
 </asp:Content>
@@ -102,7 +99,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style20">
-                            <asp:Label ID="lblUsuarios" runat="server" CssClass="auto-style22" Text="Label" BackColor="Black" Font-Size="XX-Large"></asp:Label>
+                            <asp:Label ID="lblUsuarios" runat="server" CssClass="auto-style23" Text="Label" BackColor="Black" Font-Size="X-Large"></asp:Label>
                         </td>
                     </tr>
                 </table>

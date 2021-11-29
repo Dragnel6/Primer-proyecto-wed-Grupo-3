@@ -15,15 +15,6 @@ namespace Primer_proyecto_wed_Grupo_3
     {
 
         /// <summary>
-        /// Control lblEmpl.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmpl;
-
-        /// <summary>
         /// Control Label1.
         /// </summary>
         /// <remarks>
@@ -157,6 +148,15 @@ namespace Primer_proyecto_wed_Grupo_3
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_emple;
+
+        /// <summary>
+        /// Control lblEmpl.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEmpl;
 
         /// <summary>
         /// Control GbEmpleados.

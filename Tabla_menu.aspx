@@ -6,6 +6,9 @@
             color: #66FF33;
             height: 26px;
         }
+    .auto-style4 {
+        color: #FFFF00;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -15,21 +18,21 @@
 <table class="auto-style1">
     <tr>
         <td class="auto-style3">
-            <asp:Label ID="Label1" runat="server" BackColor="Black" Font-Size="XX-Large" Text="Menu"></asp:Label>
+            <asp:Label ID="Label1" runat="server" BackColor="Black" Font-Size="XX-Large" Text="Menu" CssClass="auto-style4"></asp:Label>
         </td>
         <td class="auto-style2"></td>
     </tr>
     <tr>
         <td>&nbsp;</td>
         <td>
-            <asp:DropDownList ID="DdlLista" runat="server" AutoPostBack="True" DataSourceID="Sql_lista" DataTextField="tipo_platillo" DataValueField="tipo_platillo">
+            <asp:DropDownList ID="DdlLista" runat="server" AutoPostBack="True" DataSourceID="Sql_lista" DataTextField="Area_menu" DataValueField="Area_menu">
             </asp:DropDownList>
         </td>
     </tr>
     <tr>
         <td>&nbsp;</td>
         <td>
-            <asp:SqlDataSource ID="Sql_lista" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT * FROM [menu]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="Sql_lista" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT * FROM [areas_menu]"></asp:SqlDataSource>
         </td>
     </tr>
     <tr>
@@ -40,7 +43,6 @@
         <td>
             <asp:GridView ID="gvTabla" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="Sql_tabla" Height="202px" Width="322px" DataKeyNames="IDproducto">
                 <Columns>
-                    <asp:CommandField ShowSelectButton="True" />
                     <asp:BoundField DataField="IDproducto" HeaderText="IDproducto" InsertVisible="False" ReadOnly="True" SortExpression="IDproducto" />
                     <asp:BoundField DataField="producto" HeaderText="producto" SortExpression="producto" />
                     <asp:BoundField DataField="precio" HeaderText="precio" SortExpression="precio" />

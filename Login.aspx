@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Primer_proyecto_wed_Grupo_3.Login" %>
+
+<!DOCTYPE html>
 <script runat="server">
 
 </script>
@@ -37,22 +39,25 @@
 		<div class="mainw3-agileinfo">
 			<!-- login form -->
 			<div class="login-form">  
-				<div class="login-agileits-top"> 	
-						<p>Nombre de usuario 
+				<div class="txt-lt"> 	
+						<p>Nombre de usuario<asp:TextBox ID="txtUsuario" runat="server" placeholder="Ingresar usuario" required=""></asp:TextBox>
                             </p>
                         <p> 
-                            <asp:TextBox ID="txtUsuario" runat="server" OnTextChanged="txtUsuario_TextChanged"></asp:TextBox>
                         </p>
-						&nbsp;<p>Contraseña<asp:TextBox ID="txtContra" runat="server"></asp:TextBox>
+						&nbsp;<p>Contraseña<asp:TextBox ID="txtContra" runat="server" placeholder=".........." required=""></asp:TextBox>
                         </p>
-						&nbsp;<label class="anim"><input type="checkbox" class="checkbox"> Recordar contraseña<span> ?</span> 
+						<div class="txt-center">
+                            <label class="anim">
+                            <div class="txt-lt">
+                                <input type="checkbox" class="checkbox"> Recordar contraseña<span> ?</span> 
+						    </div>
 						</label>   
-						<input type="submit" runat="server" value="Ingresar" id="btIngresar" onclick="btIngresar"> 
+						&nbsp;<asp:Button ID="btIngresar" runat="server" Height="61px" OnClick="btIngresar_Click" Text="Ingresar" Width="458px" />
 					 
-					</div> 
+					&nbsp;</div>
+                </div> 
 				<div class="login-agileits-bottom"> 
-					<h6><a href="#">Has olvidado tu contraseña?</a></h6>
-				</div>  
+					<h6><a href="#">Has olvidado tu contraseña?div>  
 				<div class="social-w3lsicon">
 					<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
 					<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a> 
@@ -88,7 +93,7 @@
 	<script src="js/superplaceholder.js"></script>
 	<script>
 	superplaceholder({
-			el: input1,
+        el: txtUsuario,
 			sentences: [ 'john.smith11', 'lorem.ipsum55', 'example@name2' ],
 			options: {
 				loop: true,
@@ -96,7 +101,7 @@
 			}
 		})
 		superplaceholder({
-			el: input2,
+            el: txtContra,
 			sentences: [ '.........', '.....', '.....' ],
 			options: {
 				loop: true,
