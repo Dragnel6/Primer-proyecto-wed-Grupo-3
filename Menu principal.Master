@@ -48,11 +48,18 @@
                               <li><a href="Agregar_empleados.aspx">Agregar empleados</a></li>                          
                         </ul>
                     </li>                                 
-                    
+                    <li><a href="#">Otros</a>
+                        <ul>
+                            <li><a href="#">Politicas</a></li>
+                            <li><a href="Acerca-de.aspx">Acerca de</a></li>
+                        </ul>
+                    </li>
                     <li><a href="Ayuda.aspx">Ayuda</a></li>
-                    <li><a href="Acerca-de.aspx">Acerca de</a></li>
+                    
+                    
                 </ul>
-            </nav>                                 
+            </nav>     
+              
         </div>
         <table class="auto-style1">
             <tr>
@@ -84,10 +91,11 @@
                         <p>
                         </p>
                         <p>
-                        </p>
+                            &nbsp;</p>
                     </asp:ContentPlaceHolder>
-                </td>
+                &nbsp;</td>              
             </tr>
+           
         </table>
     </form> 
 </body>
