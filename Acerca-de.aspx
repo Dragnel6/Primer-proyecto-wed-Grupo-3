@@ -19,8 +19,8 @@
     <h2><%: Title %></h2>
     <h3 class="auto-style3">&nbsp;</h3>
 <h3 class="auto-style4">&nbsp;Pagina de acerca de.</h3>
-    <h3 class="auto-style5">&nbsp;Sitio web desarrollado con visual studio C # con base de datos MySQL server para la realizacion de consultas con diferentes formularios como prueba de aprendizaje.</h3>
-    <p class="auto-style4">&nbsp;Pagina web del grupo 3</p>
-<p class="auto-style4">&nbsp;Programacion I A2.</p>
+    <h3 class="auto-style5">&nbsp;Restaurante La Pempeña !!Dale el buen sabor a tus gustos!! Copyright © Equipo 3 Programacion I  2021.</h3>
+    <p class="auto-style4">&nbsp;Proyecto Web Equipo 3</p>
+<p class="auto-style4">&nbsp;Programacion I 2021.</p>
     <p>&nbsp;</p>
 </asp:Content>
