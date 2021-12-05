@@ -60,7 +60,7 @@ namespace Primer_proyecto_wed_Grupo_3
                 //Tomamos la desicion si existe o no
                 if (i > 0)
                 {
-                    Session["autorizado"] = usuario;
+                    Session["Usuario"] = usuario;
                     //Session("autorizado") = usuario;
                     Response.Redirect("~/Menu principal.aspx");
 

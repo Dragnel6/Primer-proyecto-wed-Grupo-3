@@ -110,6 +110,7 @@
     <Content Include="Agregar_empleados.aspx" />
     <Content Include="Agregar_usuarios.aspx" />
     <Content Include="Ayuda.aspx" />
+    <Content Include="Cerrar_sesion.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -219,6 +220,13 @@
     </Compile>
     <Compile Include="Ayuda.aspx.designer.cs">
       <DependentUpon>Ayuda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cerrar_sesion.aspx.cs">
+      <DependentUpon>Cerrar_sesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cerrar_sesion.aspx.designer.cs">
+      <DependentUpon>Cerrar_sesion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

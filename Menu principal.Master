@@ -61,7 +61,7 @@
                         </ul>
                     </li>
                     <li><a href="Ayuda.aspx">Ayuda</a></li>
-                    
+                    <li><a href="Cerrar_sesion.aspx">Cerrar Sesion</a></li>
                     
                 </ul>
             </nav>     
