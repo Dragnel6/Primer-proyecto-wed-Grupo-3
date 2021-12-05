@@ -144,6 +144,7 @@
     <Content Include="images\Menurestaorante.jpg" />
     <Content Include="images\2.jpg" />
     <Content Include="Login.aspx" />
+    <Content Include="politicas.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -263,6 +264,13 @@
     </Compile>
     <Compile Include="Menu principal.Master.designer.cs">
       <DependentUpon>Menu principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="politicas.aspx.cs">
+      <DependentUpon>politicas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="politicas.aspx.designer.cs">
+      <DependentUpon>politicas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

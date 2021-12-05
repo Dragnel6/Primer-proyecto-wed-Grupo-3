@@ -34,7 +34,7 @@
 	<form id="form1" runat="server">
 	<!-- main -->
 	<div class="main-agileits">
-		<h1>La pampeña</h1>
+		<h1><strong>LA PAMPEÑA</strong></h1>
 		<div class="mainw3-agileinfo">
 			<!-- login form -->
 			<div class="login-form">  
