@@ -12,7 +12,7 @@
     </asp:ContentPlaceHolder>
    <style>
        body{
-           background-image:url(images/12345.jpg);
+           background-image:url(images/b2.jpg);
            background-size:cover;
            background-attachment:fixed;
        }
@@ -41,6 +41,7 @@
                     <input type="checkbox" id="drop" />
                 </div>
                 <ul class="Menu">
+                     <li><a href="Menu principal.aspx">Inicio</a></li>
                     <li><a href="Tabla_menu.aspx">Menu</a></li>
                      <li><a href="#">Consultas</a>
                                  <ul>
@@ -107,7 +108,7 @@
                         <p>&nbsp;</p>
                         <p class="auto-style4">&nbsp;</p>
           <a href="http://www.copyscape.com/"><img src="//banners.copyscape.com/img/copyscape-seal-white-120x100.png" width="120" height="100" border="0" alt="Protected by Copyscape" title="Protected by Copyscape - Do not copy content from this page." /></a>
-                        <div class="copyright" align="center">
+   <div class="copyright" align="center">
   <script>
     document.write('&copy;' );
     document.write(' 2021 - ');

@@ -1,0 +1,314 @@
+/*--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url(../images/b2.jpg)repeat 0px 0px;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+    body a {
+        outline: none;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        text-decoration: none;
+    }
+
+        body a:hover {
+            text-decoration: none;
+        }
+
+body a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+nput[type="button"],
+input[type="submit"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+select,
+input[type="email"],
+input[type="text"],
+input[type=password],
+input[type="button"],
+input[type="submit"],
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+    ul li {
+        display: inline-block;
+    }
+
+
+/*-- //Reset-Code --*/
+
+h3.title {
+    font-size: 33px;
+    color: #424141;
+    letter-spacing: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+h6.top-title {
+    font-size: 35px;
+    color: #424141;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.title-wls-text p {
+    font-size: 15px;
+    color: #888;
+    letter-spacing: 1px;
+    padding: 0em 19em;
+}
+
+.ser-sevice-grid h4,
+.table-sub-title h4,
+.clients-info h4,
+.footer-bottom-txt h4,
+.contact-list-grid h4,
+.tasty-recipe-wthree h4 {
+    font-size: 25px;
+    color: #40cdea;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+/*-- dropdown --*/
+
+
+/* banner */
+
+.main-top {
+    background: url(../images/b2.jpg) no-repeat bottom;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 800px;
+}
+
+.headder-top {
+    position: absolute;
+    width: 100%;
+    padding: 1em 2em;
+}
+
+.style-banner {
+    padding-top: 18em;
+    padding-left: 4em;
+}
+
+.two-demo-button p {
+    color: #dadada;
+    font-weight: 100;
+    padding-right: 68em;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.main-banner h4 {
+    color: #fff;
+    font-size: 2.7em;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 68px;
+}
+
+.social-icons ul li a span {
+    color: #e0e0e0;
+    font-size: 20px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -moz-transition: 0.5s all;
+}
+
+    .social-icons ul li a span:hover {
+        color: #cacaca;
+    }
+
+.view-buttn a {
+    font-size: 13px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    letter-spacing: 1px;
+    outline: none;
+    font-weight: 400;
+    background-color: #40cdea;
+    padding: 7px 14px;
+}
+
+    .view-buttn a:hover,
+    button.btn1:hover,
+    .sent-butnn:hover {
+        opacity: 0.8;
+    }
+
+
+/* //banner */
+
+
+/*--inner-banner -- */
+
+
+
+
+
+/*--//contact-- */
+
+
+/*--gallery-- */
+
+
+/* popup */
+
+
+
+
+
+
+/* //popup */
+
+
+/*--// gallery-- */
+
+
+/*-- Recipe-- */
+
+
+
+
+/*-- Recipe-- */
+
+
+/*-- footer-- */
+
+
+
+/*--//footer-- */
+
+
+/*--responsive--*/
+
+@media(max-width:1920px) {
+}
+
+@media(max-width:1680px) {
+}
+
+@media(max-width:1600px) {
+}
+
+@media(max-width:1440px) {
+    .two-demo-button p {
+        padding-right: 59em;
+    }
+
+    .main-top {
+        min-height: 680px;
+    }
+
+    .style-banner {
+        padding-top: 14em;
+        padding-left: 3em;
+    }
+
+    .main-banner h4 {
+        font-size: 2.5em;
+    }
+
+    h6.top-title {
+        font-size: 33px;
+    }
+
+    h3.title {
+        font-size: 31px;
+        letter-spacing: 13px;
+    }
+
+    span.time {
+        font-size: 20px;
+    }
+
+    .table-sub-title h5 {
+        font-size: 49px;
+    }
+
+    .about-icon span {
+        font-size: 38px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--//responsive--*/
