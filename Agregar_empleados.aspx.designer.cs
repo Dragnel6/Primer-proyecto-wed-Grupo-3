@@ -159,15 +159,6 @@ namespace Primer_proyecto_wed_Grupo_3
         protected global::System.Web.UI.WebControls.Label lblEmpl;
 
         /// <summary>
-        /// Control GbEmpleados.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GbEmpleados;
-
-        /// <summary>
         /// Control btGuardarEdit.
         /// </summary>
         /// <remarks>
@@ -184,5 +175,14 @@ namespace Primer_proyecto_wed_Grupo_3
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btEliminar;
+
+        /// <summary>
+        /// Control GbEmpleados.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GbEmpleados;
     }
 }

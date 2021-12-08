@@ -6,7 +6,7 @@
             text-align: center;
         }
         .auto-style6 {
-            color: #FFFF00;
+            color: #000000;
         }
         </style>
 </asp:Content>
@@ -17,12 +17,12 @@
         <table class="auto-style1">
             <tr>
                 <td class="auto-style3">
-                    <asp:Label ID="lblSesion" runat="server" BackColor="Black" CssClass="auto-style6" Font-Size="X-Large" Text="Sesion"></asp:Label>
+                    <asp:Label ID="lblSesion" runat="server" BackColor="White" CssClass="auto-style6" Font-Size="X-Large" Text="Sesion"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">
-                    <asp:Label ID="lblNombre" runat="server" BackColor="Black" CssClass="auto-style6" Font-Size="X-Large" Text="Nombre"></asp:Label>
+                    <asp:Label ID="lblNombre" runat="server" BackColor="White" CssClass="auto-style6" Font-Size="X-Large" Text="Nombre"></asp:Label>
                 </td>
             </tr>
             <tr>

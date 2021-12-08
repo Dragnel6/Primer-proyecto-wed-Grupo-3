@@ -51,13 +51,14 @@
                             <div class="txt-lt">
                                 <input type="checkbox" class="checkbox"> Recordar contraseña<span> ?</span> 
 						    </div>
-						</label>   
+						</label> 
+					    <div style="text-align: center">
 						&nbsp;<asp:Button ID="btIngresar" runat="server" Height="61px" OnClick="btIngresar_Click" Text="Ingresar" Width="458px" />
-					 
+					 </div>
 					&nbsp;</div>
                 </div> 
 				<div class="login-agileits-bottom"> 
-					<h6><a href="#">Has olvidado tu contraseña?div>  
+					<h6><a href="#">Has olvidado tu contraseña?</a></h6></div>  
 				<div class="social-w3lsicon">
 					<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
 					<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a> 

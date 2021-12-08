@@ -20,6 +20,7 @@
     <h3 class="auto-style3">&nbsp;</h3>
 <h3 class="auto-style4">&nbsp;Pagina de acerca de.</h3>
     <h3 class="auto-style5">&nbsp;Restaurante La Pempeña !!Dale el buen sabor a tus gustos!! Copyright © Equipo 3 Programacion I  2021.</h3>
+    <p class="auto-style5">S<strong>itio web desarrollado con visual studio C# con base de datos SQL server para la realizacion de consultas de diferentes formularios como prueba de aprendizaje.</strong></p>
     <p class="auto-style4">&nbsp;Proyecto Web Equipo 3</p>
 <p class="auto-style4">&nbsp;Programacion I 2021.</p>
     <p>&nbsp;</p>

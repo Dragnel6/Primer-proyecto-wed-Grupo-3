@@ -24,6 +24,24 @@ namespace Primer_proyecto_wed_Grupo_3
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
+        /// Control DdlLista.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DdlLista;
+
+        /// <summary>
+        /// Control Sql_lista.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource Sql_lista;
+
+        /// <summary>
         /// Control gvTabla.
         /// </summary>
         /// <remarks>
