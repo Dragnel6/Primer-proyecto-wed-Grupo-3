@@ -199,7 +199,7 @@ p {
         .auto-style12 {
             color: #000000;
         }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
@@ -266,38 +266,48 @@ p {
             </td>
         </tr>
     <tr>
-        <td colspan="2">
+        <td>
             <div style="text-align: center">
             <asp:Button class="btn third" ID="btAgregar" runat="server" Text="Agregar" OnClick="btAgregar_Click" />
                 </div>
         </td>
+        <td>
+            <asp:Button class="btn sixth" ID="btLimpiar" runat="server" Height="61px" Text="Limpiar " Width="172px" OnClick="btLimpiar_Click" />
+        </td>
     </tr>
     <tr>
         <td>
-            <div style="text-align: right">
+            <div style="text-align: center">
             <asp:Button class="btn third" ID="btActualizar" runat="server" Text="Actualizar cambios" OnClick="btActualizar_Click" />
                 </div>
         </td>
         <td>
-            <div style="text-align: left">
+            <div style="text-align: justify">
             <asp:Button class="btn third" ID="btEliminar" runat="server" Text="Eliminar" OnClick="btEliminar_Click" />
                 </div>
         </td>
     </tr>
     <tr>
+        <td class="auto-style5" colspan="2">
+            
+                <asp:Label ID="lblEmpl" runat="server" CssClass="auto-style12" Text="Label" BackColor="White" Font-Size="X-Large"></asp:Label>
+
+        </td>
+    </tr>
+    <tr>
         <td colspan="2" class="auto-style5">
             
-            <asp:GridView ID="gvTabla" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="Sql_tabla" Height="202px" Width="322px" DataKeyNames="IDproducto" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gvTabla_SelectedIndexChanged">
+            <asp:GridView ID="gvProductos" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IDproducto" DataSourceID="Sql_tabla" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gvProductos_SelectedIndexChanged1">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
                     <asp:CommandField ShowSelectButton="True" />
-                    <asp:BoundField DataField="IDproducto" HeaderText="IDproducto" InsertVisible="False" ReadOnly="True" SortExpression="IDproducto" />
+                    <asp:BoundField DataField="IDproducto" HeaderText="IDproducto" ReadOnly="True" SortExpression="IDproducto" />
                     <asp:BoundField DataField="producto" HeaderText="producto" SortExpression="producto" />
                     <asp:BoundField DataField="precio" HeaderText="precio" SortExpression="precio" />
                     <asp:BoundField DataField="tipo_platillo" HeaderText="tipo_platillo" SortExpression="tipo_platillo" />
                 </Columns>
                 <EditRowStyle BackColor="#999999" />
-                <FooterStyle BackColor="#5D7B9D" ForeColor="White" Font-Bold="True" />
+                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
                 <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
                 <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
                 <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
@@ -308,33 +318,14 @@ p {
                 <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
             </asp:GridView>
 
-                <asp:Label ID="lblEmpl" runat="server" CssClass="auto-style12" Text="Label" BackColor="White" Font-Size="X-Large"></asp:Label>
-
         </td>
     </tr>
     <tr>
-        <td>
+        <td colspan="2">
             <asp:SqlDataSource ID="Sql_tabla" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT * FROM [menu]">
             </asp:SqlDataSource>
             <br />
         </td>
-        <td>&nbsp;</td>
     </tr>
-    <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-    </tr>
-</table>
-<p>
-</p>
-<p>
-</p>
-<p>
-</p>
-<p>
-</p>
+    </table>
 </asp:Content>

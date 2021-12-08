@@ -18,7 +18,7 @@ namespace Primer_proyecto_wed_Grupo_3
         protected void btAgregar_Click(object sender, EventArgs e)
         {
             // Incorporamos la cadena de conexion usando el origen de la tabla empleado
-            SqlConnection conexion = new SqlConnection(this.SqlDataSource_emple.ConnectionString);
+            SqlConnection conexion = new SqlConnection(this.SqlDataSource1.ConnectionString);
 
             // Creamos la variable de consulta_comprobar y le asignamos la cadena de consulta
             // Aqui comparamos si el codigo ya ha sido asignado
@@ -97,11 +97,25 @@ namespace Primer_proyecto_wed_Grupo_3
                 }
             }
         }
-        protected void GbEmpleados_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            SqlDataSource_emple.DataSourceMode = SqlDataSourceMode.DataReader;
+        /*            SqlDataSource_emple.DataSourceMode = SqlDataSourceMode.DataReader;
             SqlDataReader datos;
             datos = (SqlDataReader)SqlDataSource_emple.Select(DataSourceSelectArguments.Empty);
+
+            if (datos.Read())
+            {
+                txtCodigo.Text = datos["IDempleado"].ToString();
+                txtNombre.Text = datos["nombre"].ToString();
+                txtApell.Text = datos["apellidos"].ToString();
+                txtDui.Text = datos["dui"].ToString();
+                txtTelef.Text = datos["telefono"].ToString();
+                txtCorreo.Text = datos["correo"].ToString();
+            }
+*/    
+        protected void gvEmpleados_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlDataSource1.DataSourceMode = SqlDataSourceMode.DataReader;
+            SqlDataReader datos;
+            datos = (SqlDataReader)SqlDataSource1.Select(DataSourceSelectArguments.Empty);
 
             if (datos.Read())
             {
@@ -117,7 +131,7 @@ namespace Primer_proyecto_wed_Grupo_3
         protected void btGuardar_Click(object sender, EventArgs e)
         {
             // Incorporamos la cadena de conexion usando el origen de la tabla empleado 
-            SqlConnection conexion = new SqlConnection(this.SqlDataSource_emple.ConnectionString);
+            SqlConnection conexion = new SqlConnection(this.SqlDataSource1.ConnectionString);
 
             // Creamos la variable de consulta_comprobar y le asignamos la cadena de consulta Aqui comparamos si el codigo ya ha sido asignado 
             SqlCommand consulta_comprobar = new SqlCommand("SELECT * FROM empleados WHERE IDempleado = @codigo", conexion);
@@ -191,7 +205,7 @@ namespace Primer_proyecto_wed_Grupo_3
         protected void btEliminar_Click(object sender, EventArgs e)
         {
             //Incorporamos la cadena de conexion usando el origen de la tabla empleado
-            SqlConnection conexion = new SqlConnection(this.SqlDataSource_emple.ConnectionString);
+            SqlConnection conexion = new SqlConnection(this.SqlDataSource1.ConnectionString);
 
             // Creamos la variable de consulta_comprobar y le asignamos la cadena de consulta
             // Aqui comparamos si el codigo ya ha sido asignado
@@ -253,6 +267,15 @@ namespace Primer_proyecto_wed_Grupo_3
 
         }
 
+        protected void btLimpiar_Click(object sender, EventArgs e)
+        {
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtApell.Text = "";
+            txtCorreo.Text = "";
+            txtDui.Text = "";
+            txtTelef.Text = "";
+        }
 
     }
 }

@@ -17,6 +17,7 @@ namespace Primer_proyecto_wed_Grupo_3
 
         }
 
+
         protected void btAgregar_Click(object sender, EventArgs e)
         {
             // Incorporamos la cadena de conexion usando el origen de la tabla empleado
@@ -96,14 +97,14 @@ namespace Primer_proyecto_wed_Grupo_3
                 }
 
             }
-        }
-
-            protected void gvTabla_SelectedIndexChanged(object sender, EventArgs e)
-            {
+        }    
+        
+        protected void gvProductos_SelectedIndexChanged1(object sender, EventArgs e)
+        {
             Sql_tabla.DataSourceMode = SqlDataSourceMode.DataReader;
             SqlDataReader datos;
-            datos = (SqlDataReader)Sql_tabla.Select(DataSourceSelectArguments.Empty);
-
+            //datos = (SqlDataReader)Sql_tabla.Select(DataSourceSelectArguments.Empty);
+            datos = (SqlDataReader)Sql_tabla.Select(arguments: DataSourceSelectArguments.Empty);
             if (datos.Read())
             {
                 txtCodigo.Text = datos["IDproducto"].ToString();
@@ -250,6 +251,15 @@ namespace Primer_proyecto_wed_Grupo_3
                 conexion.Close();
             }
 
+        }
+
+        protected void btLimpiar_Click(object sender, EventArgs e)
+        {
+            txtCodigo.Text = "";
+            txtProduc.Text = "";
+            txtPrecio.Text = "";
+            txtTiPlatillo.Text = "";
+            
         }
 
     }

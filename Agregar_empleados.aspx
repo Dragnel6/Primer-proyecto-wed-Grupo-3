@@ -205,11 +205,7 @@ p {
             text-align: right;
             height: 54px;
         }
-        .auto-style10 {
-            height: 54px;
-            text-align: left;
-        }
-
+        
         .auto-style11 {
             text-align: center;
             height: 106px;
@@ -326,14 +322,11 @@ p {
             <td colspan="4">&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style3" colspan="4">
+            <td class="auto-style3" colspan="2">
                 <asp:Button class="btn third" ID="btAgregar" runat="server" Height="62px" OnClick="btAgregar_Click" Text="Agregar " Width="189px" />
             </td>
-        </tr>
-        <tr>
-            <td colspan="4" class="auto-style3">
-                <asp:SqlDataSource ID="SqlDataSource_emple" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT [IDempleado], [nombre], [apellidos], [telefono], [dui], [correo] FROM [empleados]"></asp:SqlDataSource>
-                <asp:Label ID="lblEmpl" runat="server" CssClass="auto-style12" Text="Label" BackColor="White" Font-Size="X-Large"></asp:Label>
+            <td class="auto-style3" colspan="2">
+            <asp:Button class="btn sixth" ID="btLimpiar" runat="server" Height="61px" Text="Limpiar " Width="172px" OnClick="btLimpiar_Click" />
             </td>
         </tr>
         <tr>
@@ -349,22 +342,27 @@ p {
             </td>
         </tr>
         <tr>
+            <td colspan="4" class="auto-style11">
+                <asp:Label ID="lblEmpl" runat="server" CssClass="auto-style12" Text="Label" BackColor="White" Font-Size="X-Large"></asp:Label>
+            </td>
+        </tr>
+        <tr>
             <td class="auto-style8">
                 &nbsp;</td>
             <td colspan="2">
-                <asp:GridView ID="GbEmpleados" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IDempleado" DataSourceID="SqlDataSource_emple" OnSelectedIndexChanged="GbEmpleados_SelectedIndexChanged" ForeColor="#333333" GridLines="None">
+                <asp:GridView ID="gvEmpleados" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IDempleado" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gvEmpleados_SelectedIndexChanged">
                     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                     <Columns>
                         <asp:CommandField ShowSelectButton="True" />
-                        <asp:BoundField DataField="IDempleado" HeaderText="IDempleado" ReadOnly="True" SortExpression="IDempleado" />
-                        <asp:BoundField DataField="nombre" HeaderText="nombre" SortExpression="nombre" />
-                        <asp:BoundField DataField="apellidos" HeaderText="apellidos" SortExpression="apellidos" />
-                        <asp:BoundField DataField="telefono" HeaderText="telefono" SortExpression="telefono" />
-                        <asp:BoundField DataField="dui" HeaderText="dui" SortExpression="dui" />
                         <asp:BoundField DataField="correo" HeaderText="correo" SortExpression="correo" />
+                        <asp:BoundField DataField="dui" HeaderText="dui" SortExpression="dui" />
+                        <asp:BoundField DataField="telefono" HeaderText="telefono" SortExpression="telefono" />
+                        <asp:BoundField DataField="nombre" HeaderText="nombre" SortExpression="nombre" />
+                        <asp:BoundField DataField="IDempleado" HeaderText="IDempleado" ReadOnly="True" SortExpression="IDempleado" />
+                        <asp:BoundField DataField="apellidos" HeaderText="apellidos" SortExpression="apellidos" />
                     </Columns>
                     <EditRowStyle BackColor="#999999" />
-                    <FooterStyle BackColor="#5D7B9D" ForeColor="White" Font-Bold="True" />
+                    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
                     <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
                     <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
                     <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
@@ -374,14 +372,13 @@ p {
                     <SortedDescendingCellStyle BackColor="#FFFDF8" />
                     <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                 </asp:GridView>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT [correo], [dui], [telefono], [nombre], [IDempleado], [apellidos] FROM [empleados]"></asp:SqlDataSource>
             </td>
             <td>
                 &nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style9" colspan="2">
-                &nbsp;</td>
-            <td class="auto-style10" colspan="2">
+            <td class="auto-style9" colspan="4">
                 &nbsp;</td>
         </tr>
         <tr>
