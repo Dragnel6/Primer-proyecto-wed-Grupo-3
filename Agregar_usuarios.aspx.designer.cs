@@ -60,15 +60,6 @@ namespace Primer_proyecto_wed_Grupo_3
         protected global::System.Web.UI.WebControls.DropDownList ddlTipo;
 
         /// <summary>
-        /// Control Sql_cargos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource Sql_cargos;
-
-        /// <summary>
         /// Control Label6.
         /// </summary>
         /// <remarks>
@@ -121,5 +112,14 @@ namespace Primer_proyecto_wed_Grupo_3
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblUsuarios;
+
+        /// <summary>
+        /// Control Sql_cargos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource Sql_cargos;
     }
 }

@@ -225,7 +225,7 @@ p {
                     </tr>
                     <tr>
                         <td class="auto-style7">
-                            <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtUsuario" runat="server" Width="140px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -243,11 +243,6 @@ p {
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style7">
-                            <asp:SqlDataSource ID="Sql_cargos" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT [tipo_empleado] FROM [cargos]"></asp:SqlDataSource>
-                        </td>
-                    </tr>
-                    <tr>
                         <td class="auto-style7">&nbsp;</td>
                     </tr>
                     <tr>
@@ -257,7 +252,7 @@ p {
                     </tr>
                     <tr>
                         <td class="auto-style7">
-                            <asp:TextBox ID="txtClave" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtClave" runat="server" Width="130px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -270,7 +265,7 @@ p {
                     </tr>
                     <tr>
                         <td class="auto-style7">
-                            <asp:TextBox ID="txtClaveCon" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtClaveCon" runat="server" Width="130px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -292,7 +287,9 @@ p {
             </td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
+            <td>
+                            <asp:SqlDataSource ID="Sql_cargos" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT [tipo_empleado] FROM [cargos]"></asp:SqlDataSource>
+                        </td>
         </tr>
         <tr>
             <td>&nbsp;</td>

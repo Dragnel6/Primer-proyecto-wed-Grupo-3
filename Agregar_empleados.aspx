@@ -212,6 +212,11 @@ p {
             height: 30px;
         }
 
+        .auto-style14 {
+            text-align: center;
+            height: 29px;
+        }
+
         </style>
        
 </asp:Content>
@@ -236,7 +241,7 @@ p {
         </tr>
         <tr>
             <td class="auto-style3">
-                <asp:TextBox ID="txtCodigo" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtCodigo" runat="server" Width="30px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -249,7 +254,7 @@ p {
         </tr>
         <tr>
             <td class="auto-style3">
-                <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtNombre" runat="server" Width="140px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -261,8 +266,8 @@ p {
             </td>
         </tr>
         <tr>
-            <td class="auto-style3">
-                <asp:TextBox ID="txtApell" runat="server"></asp:TextBox>
+            <td class="auto-style14">
+                <asp:TextBox ID="txtApell" runat="server" Width="170px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -275,7 +280,7 @@ p {
         </tr>
         <tr>
             <td class="auto-style3">
-                <asp:TextBox ID="txtDui" runat="server" ></asp:TextBox>
+                <asp:TextBox ID="txtDui" runat="server" Width="130px" ></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -288,7 +293,7 @@ p {
         </tr>
         <tr>
             <td class="auto-style3">
-                <asp:TextBox ID="txtTelef" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtTelef" runat="server" Width="140px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -301,7 +306,7 @@ p {
         </tr>
         <tr>
             <td class="auto-style3">
-                <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtCorreo" runat="server" Width="150px"></asp:TextBox>
             </td>
         </tr>
         <tr>

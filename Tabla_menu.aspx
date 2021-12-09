@@ -226,7 +226,7 @@ p {
     </tr>
     <tr>
         <td class="auto-style3" colspan="4">
-                <asp:TextBox ID="txtCodigo" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtCodigo" runat="server" Width="30px"></asp:TextBox>
             </td>
     </tr>
     <tr>
@@ -253,7 +253,7 @@ p {
         </tr>
     <tr>
             <td class="auto-style3" colspan="4">
-                <asp:TextBox ID="txtPrecio" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtPrecio" runat="server" Width="50px"></asp:TextBox>
             </td>
         </tr>
     <tr>
@@ -266,7 +266,7 @@ p {
         </tr>
     <tr>
             <td class="auto-style3" colspan="4">
-                <asp:TextBox ID="txtTiPlatillo" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtTiPlatillo" runat="server" Width="110px"></asp:TextBox>
             </td>
         </tr>
     <tr>
