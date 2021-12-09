@@ -105,15 +105,6 @@ namespace Primer_proyecto_wed_Grupo_3
         protected global::System.Web.UI.WebControls.Button btAgregar;
 
         /// <summary>
-        /// Control btLimpiar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btLimpiar;
-
-        /// <summary>
         /// Control btActualizar.
         /// </summary>
         /// <remarks>
@@ -132,30 +123,57 @@ namespace Primer_proyecto_wed_Grupo_3
         protected global::System.Web.UI.WebControls.Button btEliminar;
 
         /// <summary>
-        /// Control lblEmpl.
+        /// Control btLimpiar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmpl;
+        protected global::System.Web.UI.WebControls.Button btLimpiar;
 
         /// <summary>
-        /// Control gvProductos.
+        /// Control txtBusqueda.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvProductos;
+        protected global::System.Web.UI.WebControls.TextBox txtBusqueda;
 
         /// <summary>
-        /// Control Sql_tabla.
+        /// Control btBuscar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource Sql_tabla;
+        protected global::System.Web.UI.WebControls.Button btBuscar;
+
+        /// <summary>
+        /// Control lblMenu.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMenu;
+
+        /// <summary>
+        /// Control gvMenu.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvMenu;
+
+        /// <summary>
+        /// Control SqlDataSource_tabla.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_tabla;
     }
 }

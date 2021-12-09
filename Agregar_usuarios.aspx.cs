@@ -13,7 +13,16 @@ namespace Primer_proyecto_wed_Grupo_3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            lblUsuarios.Text = "";
+            if (!Page.IsPostBack)
+            {
+                this.Form.Attributes.Add("autocomplete", "off");
+            }
 
+            if (Session["Usuario"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
         }
 
         protected void btRegistrar_Click(object sender, EventArgs e)

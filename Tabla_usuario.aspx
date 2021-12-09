@@ -16,12 +16,7 @@
             text-align: center;
             width: 782px;
         }
-        .auto-style7 {
-            color: #FFFFFF;
-            text-align: center;
-            width: 782px;
-        }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
@@ -33,11 +28,9 @@
         <td class="auto-style5">&nbsp;</td>
     </tr>
     <tr>
-        <td class="auto-style7">
+        <td class="auto-style3" colspan="2">
             <asp:Label ID="Label1" runat="server" BackColor="White" Font-Size="XX-Large" Text="Tabla usuarios" CssClass="auto-style4"></asp:Label>
         </td>
-        <td class="auto-style3">
-            &nbsp;</td>
     </tr>
     <tr>
         <td class="auto-style6">&nbsp;</td>

@@ -198,18 +198,11 @@ p {
         color: #FFFFFF;
         height: 26px;
     }
-        .auto-style8 {
-            width: 290px;
-        }
         .auto-style9 {
             text-align: right;
             height: 54px;
         }
         
-        .auto-style11 {
-            text-align: center;
-            height: 106px;
-        }
         .auto-style12 {
             color: #000000;
         }
@@ -219,7 +212,7 @@ p {
             height: 30px;
         }
 
-    </style>
+        </style>
        
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -229,137 +222,142 @@ p {
     </p>
     <table class="auto-style1">
         <tr>
-            <td class="auto-style3" colspan="4">
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td colspan="4">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style5" colspan="4">
+            <td class="auto-style5">
                 <asp:Label ID="Label1" runat="server" BackColor="White" CssClass="auto-style12" Font-Size="X-Large" Text="Registro de empleados"></asp:Label>
             </td>
         </tr>
         <tr>
-            <td colspan="4">&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style5" colspan="4">
+            <td class="auto-style5">
                 <asp:Label ID="Label2" runat="server" BackColor="White" Font-Size="Large" Text="Codigo" CssClass="auto-style12"></asp:Label>
             </td>
         </tr>
         <tr>
-            <td class="auto-style3" colspan="4">
+            <td class="auto-style3">
                 <asp:TextBox ID="txtCodigo" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
-            <td colspan="4">&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style5" colspan="4">
+            <td class="auto-style5">
                 <asp:Label ID="Label3" runat="server" BackColor="White" Font-Size="Large" Text="Nombre" CssClass="auto-style12"></asp:Label>
             </td>
         </tr>
         <tr>
-            <td class="auto-style3" colspan="4">
+            <td class="auto-style3">
                 <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
-            <td colspan="4">&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style13" colspan="4">
+            <td class="auto-style13">
                 <asp:Label ID="Label4" runat="server" BackColor="White" Font-Size="Large" Text="Apellidos" CssClass="auto-style12"></asp:Label>
             </td>
         </tr>
         <tr>
-            <td class="auto-style3" colspan="4">
+            <td class="auto-style3">
                 <asp:TextBox ID="txtApell" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
-            <td class="auto-style2" colspan="4"></td>
+            <td class="auto-style2"></td>
         </tr>
         <tr>
-            <td class="auto-style6" colspan="4">
+            <td class="auto-style6">
                 <asp:Label ID="Label5" runat="server" BackColor="White" Font-Size="Large" Text="N° de DUI" CssClass="auto-style12"></asp:Label>
             </td>
         </tr>
         <tr>
-            <td class="auto-style3" colspan="4">
+            <td class="auto-style3">
                 <asp:TextBox ID="txtDui" runat="server" ></asp:TextBox>
             </td>
         </tr>
         <tr>
-            <td colspan="4">&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style5" colspan="4">
+            <td class="auto-style5">
                 <asp:Label ID="Label6" runat="server" BackColor="White" Font-Size="Large" Text="Telefono" CssClass="auto-style12"></asp:Label>
             </td>
         </tr>
         <tr>
-            <td class="auto-style3" colspan="4">
+            <td class="auto-style3">
                 <asp:TextBox ID="txtTelef" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
-            <td colspan="4">&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style5" colspan="4">
+            <td class="auto-style5">
                 <asp:Label ID="Label7" runat="server" BackColor="White" Font-Size="Large" Text="Correo Electronico" CssClass="auto-style12"></asp:Label>
             </td>
         </tr>
         <tr>
-            <td class="auto-style3" colspan="4">
+            <td class="auto-style3">
                 <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
-            <td colspan="4">&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style3" colspan="2">
-                <asp:Button class="btn third" ID="btAgregar" runat="server" Height="62px" OnClick="btAgregar_Click" Text="Agregar " Width="189px" />
-            </td>
-            <td class="auto-style3" colspan="2">
+
+        </td>
+        <td>
+            &nbsp;</td>
+        </tr>
+        </table>
+        <table class="auto-style1">
+            <tr>
+                <td>
+            <asp:Button class="btn third" ID="btAgregar" runat="server" Text="Agregar" OnClick="btAgregar_Click"/>
+                
+                </td>
+                <td>
+            <asp:Button class="btn third" ID="btActualizar" runat="server" Text="Actualizar cambios" OnClick="btActualizar_Click"/>
+                </td>
+                <td>
+            <asp:Button class="btn third" ID="btEliminar" runat="server" Text="Eliminar" OnClick="btEliminar_Click"/>
+                </td>
+                <td>
             <asp:Button class="btn sixth" ID="btLimpiar" runat="server" Height="61px" Text="Limpiar " Width="172px" OnClick="btLimpiar_Click" />
+                </td>
+            </tr>
+    </table>
+    <table class="auto-style1">
+        <tr>
+            <td class="auto-style3" colspan="2">
+                <div style="text-align: center">
+                    <asp:TextBox ID="txtBusqueda" runat="server"></asp:TextBox>
+                </div>
+                <div style="text-align: center">
+                    <asp:Button ID="btBuscar" runat="server" class="btn fourth" Height="61px" OnClick="btBuscar_Click" Text="Buscar" Width="177px" />
+                </div>
             </td>
         </tr>
         <tr>
-            <td colspan="2" class="auto-style11">
-                <div style="text-align: right">
-                <asp:Button class= "btn third" ID="btGuardarEdit" runat="server" Height="62px" OnClick="btGuardar_Click" Text="Actualizar Cambios" Width="287px" />
-                    </div>
-            </td>
-            <td colspan="2" class="auto-style11">
-                <div style="text-align: justify">
-                <asp:Button class="btn third" ID="btEliminar" runat="server" Height="60px" OnClick="btEliminar_Click" Text="Eliminar " Width="177px" />
-                    </div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="4" class="auto-style11">
+            <td class="auto-style3" colspan="2">
                 <asp:Label ID="lblEmpl" runat="server" CssClass="auto-style12" Text="Label" BackColor="White" Font-Size="X-Large"></asp:Label>
             </td>
         </tr>
         <tr>
-            <td class="auto-style8">
-                &nbsp;</td>
-            <td colspan="2">
-                <asp:GridView ID="gvEmpleados" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IDempleado" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gvEmpleados_SelectedIndexChanged">
+            <td>
+                <asp:GridView ID="gvEmpleados" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IDempleado" DataSourceID="SqlDataSource_emp" ForeColor="#333333" GridLines="None">
                     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                     <Columns>
-                        <asp:CommandField ShowSelectButton="True" />
-                        <asp:BoundField DataField="correo" HeaderText="correo" SortExpression="correo" />
-                        <asp:BoundField DataField="dui" HeaderText="dui" SortExpression="dui" />
-                        <asp:BoundField DataField="telefono" HeaderText="telefono" SortExpression="telefono" />
-                        <asp:BoundField DataField="nombre" HeaderText="nombre" SortExpression="nombre" />
                         <asp:BoundField DataField="IDempleado" HeaderText="IDempleado" ReadOnly="True" SortExpression="IDempleado" />
+                        <asp:BoundField DataField="nombre" HeaderText="nombre" SortExpression="nombre" />
                         <asp:BoundField DataField="apellidos" HeaderText="apellidos" SortExpression="apellidos" />
+                        <asp:BoundField DataField="telefono" HeaderText="telefono" SortExpression="telefono" />
+                        <asp:BoundField DataField="dui" HeaderText="dui" SortExpression="dui" />
+                        <asp:BoundField DataField="correo" HeaderText="correo" SortExpression="correo" />
                     </Columns>
                     <EditRowStyle BackColor="#999999" />
                     <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -372,17 +370,17 @@ p {
                     <SortedDescendingCellStyle BackColor="#FFFDF8" />
                     <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT [correo], [dui], [telefono], [nombre], [IDempleado], [apellidos] FROM [empleados]"></asp:SqlDataSource>
+                <br />
+                <asp:SqlDataSource ID="SqlDataSource_emp" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT * FROM [empleados]"></asp:SqlDataSource>
             </td>
             <td>
+        </tr>
+        <tr>
+            <td class="auto-style9" colspan="2">
                 &nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style9" colspan="4">
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td colspan="4">
+            <td colspan="2">
             </td>
         </tr>
     </table>

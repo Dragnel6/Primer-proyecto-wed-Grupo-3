@@ -141,22 +141,13 @@ namespace Primer_proyecto_wed_Grupo_3
         protected global::System.Web.UI.WebControls.Button btAgregar;
 
         /// <summary>
-        /// Control btLimpiar.
+        /// Control btActualizar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btLimpiar;
-
-        /// <summary>
-        /// Control btGuardarEdit.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btGuardarEdit;
+        protected global::System.Web.UI.WebControls.Button btActualizar;
 
         /// <summary>
         /// Control btEliminar.
@@ -166,6 +157,33 @@ namespace Primer_proyecto_wed_Grupo_3
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btEliminar;
+
+        /// <summary>
+        /// Control btLimpiar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btLimpiar;
+
+        /// <summary>
+        /// Control txtBusqueda.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtBusqueda;
+
+        /// <summary>
+        /// Control btBuscar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btBuscar;
 
         /// <summary>
         /// Control lblEmpl.
@@ -186,12 +204,12 @@ namespace Primer_proyecto_wed_Grupo_3
         protected global::System.Web.UI.WebControls.GridView gvEmpleados;
 
         /// <summary>
-        /// Control SqlDataSource1.
+        /// Control SqlDataSource_emp.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_emp;
     }
 }

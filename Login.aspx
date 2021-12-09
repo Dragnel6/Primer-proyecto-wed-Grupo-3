@@ -29,6 +29,9 @@
         .auto-style2 {
             width: 100%;
         }
+        .auto-style3 {
+            color: #FF0000;
+        }
     </style>
 </head>
 <body>
@@ -44,7 +47,7 @@
                             </p>
                         <p> 
                         </p>
-						&nbsp;<p>Contraseña<asp:TextBox ID="txtContra" runat="server" placeholder=".........." required=""></asp:TextBox>
+						&nbsp;<p>Contraseña<asp:TextBox ID="txtContra" runat="server" placeholder=".........." required="" TextMode="Password"></asp:TextBox>
                         </p>
 						<div class="txt-center">
                             <label class="anim">
@@ -55,7 +58,10 @@
 					    <div style="text-align: center">
 						&nbsp;<asp:Button ID="btIngresar" runat="server" Height="61px" OnClick="btIngresar_Click" Text="Ingresar" Width="458px" />
 					 </div>
-					&nbsp;</div>
+					&nbsp;<br />
+                            <br />
+                    <asp:Label ID="lblLogin" runat="server" BackColor="White" CssClass="auto-style3" Font-Size="X-Large" Text="Label"></asp:Label>
+                        </div>
                 </div> 
 				<div class="login-agileits-bottom"> 
 					<h6><a href="#">Has olvidado tu contraseña?</a></h6></div>  
@@ -77,7 +83,6 @@
 		<table class="auto-style2">
             <tr>
                 <td class="txt-center">
-                    <asp:Label ID="lblLogin" runat="server" BackColor="Black" CssClass="fa-inverse" Font-Size="X-Large" Text="Label"></asp:Label>
                 </td>
             </tr>
             <tr>

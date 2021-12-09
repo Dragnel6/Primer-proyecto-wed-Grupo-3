@@ -199,6 +199,10 @@ p {
         .auto-style12 {
             color: #000000;
         }
+        .auto-style13 {
+            text-align: center;
+            width: 232px;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -207,61 +211,61 @@ p {
 </p>
 <table class="auto-style1">
     <tr>
-        <td class="auto-style3" colspan="2">
+        <td class="auto-style3" colspan="4">
             <asp:Label ID="Label1" runat="server" BackColor="White" Font-Size="XX-Large" Text="Menu" CssClass="auto-style4"></asp:Label>
         </td>
     </tr>
     <tr>
-        <td class="auto-style3" colspan="2">
+        <td class="auto-style3" colspan="4">
             &nbsp;</td>
     </tr>
     <tr>
-        <td class="auto-style3" colspan="2">
+        <td class="auto-style3" colspan="4">
                 <asp:Label ID="Label5" runat="server" BackColor="White" Font-Size="Large" Text="Codigo" CssClass="auto-style4"></asp:Label>
             </td>
     </tr>
     <tr>
-        <td class="auto-style3" colspan="2">
+        <td class="auto-style3" colspan="4">
                 <asp:TextBox ID="txtCodigo" runat="server"></asp:TextBox>
             </td>
     </tr>
     <tr>
-        <td class="auto-style3" colspan="2">
+        <td class="auto-style3" colspan="4">
             &nbsp;</td>
     </tr>
     <tr>
-            <td class="auto-style5" colspan="2">
+            <td class="auto-style5" colspan="4">
                 <asp:Label ID="Label2" runat="server" BackColor="White" Font-Size="Large" Text="Nombre"></asp:Label>
             </td>
         </tr>
     <tr>
-            <td class="auto-style3" colspan="2">
+            <td class="auto-style3" colspan="4">
                 <asp:TextBox ID="txtProduc" runat="server"></asp:TextBox>
             </td>
         </tr>
     <tr>
-            <td colspan="2">&nbsp;</td>
+            <td colspan="4">&nbsp;</td>
         </tr>
     <tr>
-            <td class="auto-style5" colspan="2">
+            <td class="auto-style5" colspan="4">
                 <asp:Label ID="Label3" runat="server" BackColor="White" Font-Size="Large" Text="Precio"></asp:Label>
             </td>
         </tr>
     <tr>
-            <td class="auto-style3" colspan="2">
+            <td class="auto-style3" colspan="4">
                 <asp:TextBox ID="txtPrecio" runat="server"></asp:TextBox>
             </td>
         </tr>
     <tr>
-            <td colspan="2" class="auto-style6"></td>
+            <td colspan="4" class="auto-style6"></td>
         </tr>
     <tr>
-            <td class="auto-style5" colspan="2">
+            <td class="auto-style5" colspan="4">
                 <asp:Label ID="Label4" runat="server" BackColor="White" Font-Size="Large" Text="Tipo platillo"></asp:Label>
             </td>
         </tr>
     <tr>
-            <td class="auto-style3" colspan="2">
+            <td class="auto-style3" colspan="4">
                 <asp:TextBox ID="txtTiPlatillo" runat="server"></asp:TextBox>
             </td>
         </tr>
@@ -272,11 +276,6 @@ p {
                 </div>
         </td>
         <td>
-            <asp:Button class="btn sixth" ID="btLimpiar" runat="server" Height="61px" Text="Limpiar " Width="172px" OnClick="btLimpiar_Click" />
-        </td>
-    </tr>
-    <tr>
-        <td>
             <div style="text-align: center">
             <asp:Button class="btn third" ID="btActualizar" runat="server" Text="Actualizar cambios" OnClick="btActualizar_Click" />
                 </div>
@@ -286,21 +285,46 @@ p {
             <asp:Button class="btn third" ID="btEliminar" runat="server" Text="Eliminar" OnClick="btEliminar_Click" />
                 </div>
         </td>
+        <td>
+            <asp:Button class="btn sixth" ID="btLimpiar" runat="server" Height="61px" Text="Limpiar " Width="172px" OnClick="btLimpiar_Click" />
+        </td>
+    </tr>
+    </table>
+    <table class="auto-style1">
+    <tr>
+        <td class="auto-style6" colspan="2">
+
+                <div style="text-align: center">
+            
+                <asp:TextBox ID="txtBusqueda" runat="server"></asp:TextBox>
+
+                  </div>
+
+                <div style="text-align: center">
+                <asp:Button class="btn fourth" ID="btBuscar" runat="server" Text="Buscar" Height="61px" Width="177px" OnClick="btBuscar_Click" />
+                  </div>
+        </td>
     </tr>
     <tr>
         <td class="auto-style5" colspan="2">
             
-                <asp:Label ID="lblEmpl" runat="server" CssClass="auto-style12" Text="Label" BackColor="White" Font-Size="X-Large"></asp:Label>
+                <asp:Label ID="lblMenu" runat="server" CssClass="auto-style12" Text="Label" BackColor="White" Font-Size="X-Large"></asp:Label>
 
         </td>
     </tr>
     <tr>
-        <td colspan="2" class="auto-style5">
+        <td class="auto-style13">
             
-            <asp:GridView ID="gvProductos" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IDproducto" DataSourceID="Sql_tabla" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gvProductos_SelectedIndexChanged1">
+                <div style="margin: auto">
+            
+                  </div>
+
+        </td>
+        <td class="auto-style5">
+            
+            <asp:GridView ID="gvMenu" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IDproducto" DataSourceID="SqlDataSource_tabla" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
-                    <asp:CommandField ShowSelectButton="True" />
                     <asp:BoundField DataField="IDproducto" HeaderText="IDproducto" ReadOnly="True" SortExpression="IDproducto" />
                     <asp:BoundField DataField="producto" HeaderText="producto" SortExpression="producto" />
                     <asp:BoundField DataField="precio" HeaderText="precio" SortExpression="precio" />
@@ -318,12 +342,12 @@ p {
                 <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
             </asp:GridView>
 
+                  <asp:SqlDataSource ID="SqlDataSource_tabla" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT * FROM [menu]"></asp:SqlDataSource>
+
         </td>
     </tr>
     <tr>
         <td colspan="2">
-            <asp:SqlDataSource ID="Sql_tabla" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT * FROM [menu]">
-            </asp:SqlDataSource>
             <br />
         </td>
     </tr>

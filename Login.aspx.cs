@@ -13,6 +13,11 @@ namespace Primer_proyecto_wed_Grupo_3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            lblLogin.Text = "";
+            if (!Page.IsPostBack)
+            {
+                this.Form.Attributes.Add("autocomplete", "off");
+            }
 
         }
 
@@ -61,7 +66,6 @@ namespace Primer_proyecto_wed_Grupo_3
                 if (i > 0)
                 {
                     Session["Usuario"] = usuario;
-                    //Session("autorizado") = usuario;
                     Response.Redirect("~/Menu principal.aspx");
 
                     //Cerramos la conexion

@@ -4,9 +4,13 @@
         .auto-style3 {
             color: #FFFFFF;
             text-align: center;
+            width: 971px;
         }
         .auto-style4 {
             color: #000000;
+        }
+        .auto-style6 {
+            width: 971px;
         }
     </style>
 </asp:Content>
@@ -16,30 +20,31 @@
 </p>
 <table class="auto-style1">
     <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <td class="auto-style5" colspan="2">
+            <asp:Label ID="Label1" runat="server" BackColor="White" Font-Size="XX-Large" Text="Tabla empleados" CssClass="auto-style4"></asp:Label>
+        </td>
     </tr>
     <tr>
         <td class="auto-style3">
-            <asp:Label ID="Label1" runat="server" BackColor="White" Font-Size="XX-Large" Text="Tabla empleados" CssClass="auto-style4"></asp:Label>
-        </td>
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+    </tr>
+    <tr>
+        <td class="auto-style6">&nbsp;</td>
         <td>
             <asp:DropDownList ID="DdlLista" runat="server" AutoPostBack="True" DataSourceID="Sql_lista" DataTextField="nombre_area" DataValueField="nombre_area">
             </asp:DropDownList>
         </td>
     </tr>
     <tr>
-        <td>&nbsp;</td>
+        <td class="auto-style6">&nbsp;</td>
         <td>
             <asp:SqlDataSource ID="Sql_lista" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT * FROM [areas_empleado]"></asp:SqlDataSource>
         </td>
     </tr>
     <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>
+        <td class="auto-style6">
             <asp:GridView ID="gvTabla" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="Sql_tabla" Height="202px" Width="322px" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
@@ -63,7 +68,7 @@
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <td>
+        <td class="auto-style6">
             <asp:SqlDataSource ID="Sql_tabla" runat="server" ConnectionString="<%$ ConnectionStrings:sistemaConnectionString %>" SelectCommand="SELECT * FROM [puestos] WHERE ([tipo_empleado] = @tipo_empleado)">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="DdlLista" Name="tipo_empleado" PropertyName="SelectedValue" Type="String" />

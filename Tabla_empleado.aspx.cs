@@ -11,7 +11,10 @@ namespace Primer_proyecto_wed_Grupo_3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Usuario"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
         }
 
     }

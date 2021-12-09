@@ -11,27 +11,21 @@ namespace Primer_proyecto_wed_Grupo_3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+              if (Session["Usuario"] == null){
 
-              if (Session["Usuario"] == ""){
-
-                 // Me.Response.Redirect("Menu principal.aspx")
-
-                  this.lblSesion.Text = "No se ha iniciado ninguna sesion de usuario.";
-                  this.lblNombre.Text = "";
-                  //SESION.Visible = false;
+                this.lblSesion.Text = "No has iniciado sesion";
+                Response.Redirect("Login.aspx");
+                btCerrarSe.Visible = false;
               }
               else
               {
-                  this.lblSesion.Text = "Esta seguro que desea cerrar la sesion iniciada como:";
-                  this.lblNombre.Text ="" + Session["Usuario"] + "";
-                  //SESION.Visible = true;
+                  this.lblSesion.Text = "Esta seguro que desea cerrar la sesion iniciada como: " + Session["Usuario"] + "";
               }
-
         }
 
         protected void btCerrarSe_Click(object sender, EventArgs e)
         {
-            Session["Usuario"] = "";
+            Session["Usuario"] = null;
             this.Response.Redirect("Login.aspx");
         }
     }
